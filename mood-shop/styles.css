@@ -1,0 +1,23 @@
+/* Styles for the header */
+.page-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  background-color: bisque;
+}
+
+/* Styles for the navbar <ul> */
+.page-header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none; /* Removes bullet points */
+}
+
+/* Styles for the navbar links */
+.page-header a {
+  display: block;
+  padding: 0.5em;
+  text-decoration: none; /* Removes underlines from links */
+
+}
