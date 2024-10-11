@@ -3,6 +3,7 @@
   <head>
     <title>The Mood Shop</title>
     <link rel="stylesheet" href="styles.css">
+    <style></style>
   </head>
 
   <body>
@@ -21,67 +22,225 @@
     <div class="items" id="items">
       <!-- Moods will be dynamically displayed here by the JavaScript -->
     </div>
+ <!-- Footer where the cart will be displayed -->
+ <footer>
+    <h2>Your Cart</h2>
+    <!-- This is where the cart items will appear -->
+    <ul id="cart-items"></ul>
+  </footer>
 
     <div>
-        <img src='./resources/images/happy_spongebob.gif' width=300 height=300>
-        <p>Happiness lies in the joy of achievement and the thrill of creative effort.</p>
-        <p>5.99</p>
-      </div>
-      
-      <img src='./resources/images/sad_spongebob.gif' width=300 height=300>
-      <p>Tears are words that can't be explained.</p>
-      <p>5.99</p>
+        <div class="items" id="items">
+        <div class="item">
+            <img src='./resources/images/happy_spongebob.gif' width="300" height="300">
+            <p>Happiness lies in the joy of achievement and the thrill of creative effort.</p>
+            <p>Price: $5.99</p>
+            <button class="add-to-cart" data-id="1" data-price="5.99" data-name="Happy SpongeBob">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src='./resources/images/sad_spongebob.gif' width="300" height="300">
+            <p>Tears are words that can't be explained.</p>
+            <p>Price: $5.99</p>
+            <button class="add-to-cart" data-id="2" data-price="5.99" data-name="Sad SpongeBob">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src='./resources/images/angry_1.gif' width="300" height="300">
+            <p>Anger is one letter short of danger.</p>
+            <p>Price: $5.99</p>
+            <button class="add-to-cart" data-id="3" data-price="5.99" data-name="Angry">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src='./resources/images/calm_woman.gif' width="300" height="300">
+            <p>Calmness is the cradle of power.</p>
+            <p>Price: $5.99</p>
+            <button class="add-to-cart" data-id="4" data-price="5.99" data-name="Calm Woman">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src='./resources/images/curious_owl.gif' width="300" height="300">
+            <p>Curiosity is the wick in the candle of learning.</p>
+            <p>Price: $5.99</p>
+            <button class="add-to-cart" data-id="5" data-price="5.99" data-name="Curious Owl">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src='./resources/images/disgust_theoffice.gif' width="300" height="300">
+            <p>Disgust is an emotion we feel when faced with something repulsive.</p>
+            <p>Price: $5.99</p>
+            <button class="add-to-cart" data-id="6" data-price="5.99" data-name="Disgust">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src='./resources/images/sleepy_cat.gif' width="300" height="300">
+            <p>Sleep is the best meditation.</p>
+            <p>Price: $5.99</p>
+            <button class="add-to-cart" data-id="7" data-price="5.99" data-name="Sleepy Cat">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src='./resources/images/energetic_puppy.gif' width="300" height="300">
+            <p>Energy and persistence conquer all things.</p>
+            <p>Price: $5.99</p>
+            <button class="add-to-cart" data-id="8" data-price="5.99" data-name="Energetic Puppy">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src='./resources/images/gloomy_girl.gif' width="300" height="300">
+            <p>Gloominess can cloud your heart, but there's always light at the end of the tunnel.</p>
+            <p>Price: $5.99</p>
+            <button class="add-to-cart" data-id="9" data-price="5.99" data-name="Gloomy Girl">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src='./resources/images/scared_spongebob.gif' width="300" height="300">
+            <p>Fear is the path to the dark side.</p>
+            <p>Price: $5.99</p>
+            <button class="add-to-cart" data-id="10" data-price="5.99" data-name="Scared SpongeBob">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src='./resources/images/surprised_2.gif' width="300" height="300">
+            <p>Surprises are the joy of life.</p>
+            <p>Price: $5.99</p>
+            <button class="add-to-cart" data-id="11" data-price="5.99" data-name="Surprised">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src='./resources/images/shy_dog.gif' width="300" height="300">
+            <p>Shyness is the shield against the unknown.</p>
+            <p>Price: $5.99</p>
+            <button class="add-to-cart" data-id="12" data-price="5.99" data-name="Shy Dog">Add to Cart</button>
+        </div>
     </div>
-   
-    <img src='./resources/images/angry_1.gif' width=300 height=300>
-    <p>Anger is one letter short of danger.</p>
-    <p>5.99</p>
-  </div>
+      </main>
+      <footer>
+        <!-- Footer -->
+      </footer>
+      <script src='./resources/js/scripts.js' type="module"></script>
+    </body>
+    </html>
 
-  <img src='./resources/images/calm_woman.gif' width=300 height=300>
-  <p>Calmness is the cradle of power.</p>
-  <p>5.99</p>
-</div>
+    <script> 
 
-<img src='./resources/images/curious_owl.gif' width=300 height=300>
-<p>Curiosity is the wick in the candle of learning.</p>
-<p>5.99</p>
-</div>
+       let cart = []; // Initialize cart as an empty array
+// Function to add item to the cart
+const addItemToCart = (id, price, name) => {
+  const item = { id, price, name, qty: 1 };
+  cart.push(item);
+};
 
-<img src='./resources/images/disgust_theoffice.gif' width=300 height=300>
-<p>Disgust is an emotion we feel when faced with something repulsive.</p>
-<p>5.99</p>
-</div>
+// Function to add quantity to an item in the cart
+const addToCart = (id) => {
+  for (let i = 0; i < cart.length; i++) {
+    const item = cart[i];
+    if (id === item.id) {
+      item.qty += 1; // Increment quantity
+      return; // Exit function once the item is found and updated
+    }
+  }
+};
 
-<img src='./resources/images/sleepy_cat.gif' width=300 height=300>
-<p>Sleep is the best meditation.</p>
-<p>5.99</p>
-</div>
+// Function to remove quantity from an item in the cart
+const removeFromCart = (id) => {
+  for (let i = 0; i < cart.length; i++) {
+    const item = cart[i];
+    if (id === item.id) {
+      item.qty -= 1; // Decrease quantity
+      if (item.qty === 0) {
+        cart.splice(i, 1); // Remove item from cart if qty is 0
+      }
+      return; // Exit function once the item is found and updated
+    }
+  }
+};
 
-<img src='./resources/images/energetic_puppy.gif' width=300 height=300>
-<p>Energy and persistence conquer all things.</p>
-<p>5.99</p>
-</div>
+// Function to get the total cost of all items in the cart
+const getCartTotal = () => {
+  let total = 0;
+  for (let i = 0; i < cart.length; i++) {
+    const item = cart[i];
+    total += item.qty * item.price;
+  }
+  return total.toFixed(2); // Format total to 2 decimal places
+};
 
-<img src='./resources/images/gloomy_girl.gif' width=300 height=300>
-<p>Gloominess can cloud your heart, but there's always light at the end of the tunnel.</p>
-<p>5.99</p>
-</div>
+// Function to display the cart
+const displayCart = () => {
+  const cartItemsContainer = document.getElementById('cart-items');
+  cartItemsContainer.innerHTML = ''; // Clear current cart items
 
-<img src='./resources/images/scared_spongebob.gif' width=300 height=300>
-<p>Fear is the path to the dark side.</p>
-<p>5.99</p>
-</div>
+  cart.forEach(item => {
+    const cartItem = document.createElement('li');
+    cartItem.innerHTML = `
+      ${item.name} - $${item.price} x ${item.qty}
+      <button class="button-add" data-id="${item.id}">+</button>
+      <button class="button-sub" data-id="${item.id}">-</button>
+    `;
+    cartItemsContainer.appendChild(cartItem);
+  });
 
-<img src='./resources/images/surprised_2.gif' width=300 height=300>
-<p>Surprises are the joy of life.</p>
-<p>5.99</p>
-</div>
+  // Get the total cost in the cart
+  const cartTotal = getCartTotal();
+  // Create a list item for the total and append it to the cart items
+  const totalItem = document.createElement('li');
+  totalItem.innerHTML = `Total: $${cartTotal}`;
+  cartItemsContainer.appendChild(totalItem);
+};
 
-<img src='./resources/images/shy_dog.gif' width=300 height=300>
-<p>Shyness is the shield against the unknown</p>
-<p>5.99</p>
-</div>
+// Event listener for click events
+document.body.addEventListener('click', (e) => {
+  if (e.target.matches('.add-to-cart')) {
+    const id = e.target.dataset.id;
+    const price = e.target.dataset.price;
+    const name = e.target.dataset.name; // Get the name from data attributes
+    addItemToCart(id, price, name); // Pass name to the addItemToCart function
+    displayCart();
+  } else if (e.target.matches('.button-add')) {
+    const id = e.target.dataset.id; // Get item id from data attribute
+    addToCart(id); // Add to cart
+    displayCart(); // Update cart display
+  } else if (e.target.matches('.button-sub')) {
+    const id = e.target.dataset.id; // Get item id from data attribute
+    removeFromCart(id); // Remove from cart
+    displayCart(); // Update cart display
+  }
+});
+
+// Function to load products from JSON file
+const loadProducts = async () => {
+  const response = await fetch('data/products.json'); // Adjust path if needed
+  const products = await response.json();
+  // Functionality to dynamically create product elements
+};
+
+// Load products when the page loads
+window.onload = () => {
+  loadProducts();
+};
+
+// Event listener for Enter key press to update quantity from input field
+document.body.addEventListener('keydown', (e) => {
+  if (e.target.matches('.input-qty')) {
+    if (e.key === "Enter") {
+      console.log(e.key);
+      const name = e.target.dataset.id;
+      // Use parseInt to get the numeric value from the input
+      const value = parseInt(e.target.value);
+      updateCart(name, value); // Assuming you have an updateCart function
+      console.log(e);
+      displayCart(); // Update the cart display after quantity change
+    }
+  }
+});
+
+    </script>
+</body>
+</html>
+
+    
 
   </body>
 </html>
