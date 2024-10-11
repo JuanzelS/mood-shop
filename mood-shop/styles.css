@@ -1,23 +1,97 @@
 /* Styles for the header */
 .page-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-  background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: bisque;
+    padding: 1em; /* Add padding for better spacing */
 }
 
 /* Styles for the navbar <ul> */
 .page-header ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none; /* Removes bullet points */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none; /* Removes bullet points */
 }
 
 /* Styles for the navbar links */
 .page-header a {
-  display: block;
-  padding: 0.5em;
-  text-decoration: none; /* Removes underlines from links */
+    display: block;
+    padding: 0.5em;
+    text-decoration: none; /* Removes underlines from links */
+}
 
+/* Styles for the items container to create a 4x4 grid */
+.items {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next row */
+    justify-content: space-around; /* Space items evenly */
+    margin: 2em; /* Add margin around the container */
+}
+
+/* Styles for each item */
+.item {
+    flex: 0 0 calc(25% - 20px); /* Makes each item take up 25% of the width, minus some margin */
+    margin: 10px; /* Add margin around each item */
+    text-align: center; /* Center text under the images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    padding: 1em; /* Add padding for aesthetics */
+    border: 1px solid #ddd; /* Optional: border around items */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Optional: Styles for images to ensure they fit nicely */
+.item img {
+    max-width: 100%; /* Ensures images don't overflow their containers */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Add styles for the Remove button */
+button.remove-from-cart {
+    font-size: 1rem; /* Matches the "Add to Cart" button */
+    padding: 0.5em 1em; /* Similar padding for consistency */
+    margin-top: 0.5em; /* Add spacing between the buttons */
+    border: 1px solid #f00; /* Optional: red border to indicate removal */
+    background-color: #fff; /* White background */
+    color: #f00; /* Red text color to indicate removal */
+    cursor: pointer; /* Pointer cursor for interaction */
+    border-radius: 4px; /* Optional: rounded corners */
+}
+
+/* Button hover effect */
+button.remove-from-cart:hover {
+    background-color: #f00; /* Red background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Footer styles */
+footer {
+    width: 80%;
+    margin: auto;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+input, button {
+    font-size: 1rem;
+}
+
+footer li {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+footer li > span:first-child {
+    margin-right: auto;
+}
+
+footer li > * {
+    margin: 0 1rem;
 }
